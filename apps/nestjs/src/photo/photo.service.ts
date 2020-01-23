@@ -14,6 +14,10 @@ export class PhotoService {
         return this.photoRepository.find();
     }
 
+    async findByID(id): Promise<Photo> {
+        return this.photoRepository.findOne(id);
+    }
+
     async create(photo: Photo): Promise<Photo> {
         return this.photoRepository.create(photo);
     }
