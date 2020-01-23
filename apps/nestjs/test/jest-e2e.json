@@ -1,0 +1,19 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@egg/lab-04-lib/(.*)": "<rootDir>/../libs/lab-04-lib/src/$1",
+    "@egg/lab-04-lib": "<rootDir>/../libs/lab-04-lib/src",
+    "@egg/thumb/(.*)": "<rootDir>/../libs/thumb/src/$1",
+    "@egg/thumb": "<rootDir>/../libs/thumb/src"
+  }
+}

@@ -9,7 +9,24 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "incremental": true
+    "incremental": true,
+    "paths": {
+      "@egg/lab-04-lib": [
+        "libs/lab-04-lib/src"
+      ],
+      "@egg/lab-04-lib/*": [
+        "libs/lab-04-lib/src/*"
+      ],
+      "@egg/thumb": [
+        "libs/thumb/src"
+      ],
+      "@egg/thumb/*": [
+        "libs/thumb/src/*"
+      ]
+    }
   },
-  "exclude": ["node_modules", "dist"]
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

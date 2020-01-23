@@ -1,4 +1,48 @@
 {
   "collection": "@nestjs/schematics",
-  "sourceRoot": "src"
+  "sourceRoot": "apps/nestjs/src",
+  "projects": {
+    "lab-04-lib": {
+      "type": "library",
+      "root": "libs/lab-04-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/lab-04-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/lab-04-lib/tsconfig.lib.json"
+      }
+    },
+    "thumb": {
+      "type": "library",
+      "root": "libs/thumb",
+      "entryFile": "index",
+      "sourceRoot": "libs/thumb/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/thumb/tsconfig.lib.json"
+      }
+    },
+    "nestjs": {
+      "type": "application",
+      "root": "apps/nestjs",
+      "entryFile": "main",
+      "sourceRoot": "apps/nestjs/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nestjs/tsconfig.app.json"
+      }
+    },
+    "eggapi": {
+      "type": "application",
+      "root": "apps/eggapi",
+      "entryFile": "main",
+      "sourceRoot": "apps/eggapi/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/eggapi/tsconfig.app.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/nestjs/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/nestjs"
 }
