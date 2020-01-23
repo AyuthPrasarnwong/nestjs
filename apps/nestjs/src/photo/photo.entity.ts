@@ -19,7 +19,4 @@ export class Photo {
 
     @Column()
     isPublished: boolean;
-
-    @Column()
-    active: boolean;
 }
